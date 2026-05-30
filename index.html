@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nutrivita Corporate: bienestar corporativo, menús equilibrados, instalaciones modernas y merchandising saludable.">
+  <title>Nutrivita Corporate | Bienestar y nutrición empresarial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#home" aria-label="Ir al inicio">
+        <span class="brand__mark">NV</span>
+        <span class="brand__text" data-i18n="brandName">Nutrivita Corporate</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="navAbout">Quiénes Somos</a></li>
+          <li><a href="#admission" data-i18n="navAdmission">Formulario</a></li>
+          <li><a href="#location" data-i18n="navLocation">Ubicación</a></li>
+          <li><a href="#shop" data-i18n="navShop">Tienda</a></li>
+          <li><a href="#menus" data-i18n="navMenus">Menús</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <label class="language-switcher" for="languageSelect">
+            <span class="sr-only" data-i18n="languageLabel">Idioma</span>
+            <select id="languageSelect" aria-label="Seleccionar idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </label>
+          <a class="btn btn--accent btn--small" href="#home" data-i18n="navHomeButton">Página Inicial</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home" aria-labelledby="home-title">
+      <div class="hero__content">
+        <p class="eyebrow" data-i18n="heroEyebrow">Bienestar corporativo inteligente</p>
+        <div class="hero__logo" aria-label="Logotipo grande de Nutrivita Corporate">
+          <span class="hero__logo-mark">NV</span>
+          <span class="hero__logo-text" data-i18n="brandName">Nutrivita Corporate</span>
+        </div>
+        <h1 id="home-title" data-i18n="heroTitle">Nutrición saludable para equipos con alto rendimiento.</h1>
+        <p class="hero__lead" data-i18n="heroLead">Diseñamos experiencias de alimentación equilibrada, espacios inspiradores y servicios corporativos que impulsan la energía de tu organización.</p>
+        <div class="hero__buttons">
+          <a class="btn btn--accent" href="#admission" data-i18n="heroPrimary">Inscríbete ahora</a>
+          <a class="btn btn--ghost" href="#about" data-i18n="heroSecondary">Conoce la empresa</a>
+        </div>
+      </div>
+      <div class="hero__card" aria-hidden="true">
+        <div class="nutrition-ring"><span>98%</span></div>
+        <p data-i18n="heroMetric">Satisfacción en programas de bienestar</p>
+      </div>
+      <div class="section-contact" data-contact-block></div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section__header">
+        <p class="eyebrow" data-i18n="aboutEyebrow">Página 1</p>
+        <h2 id="about-title" data-i18n="aboutTitle">Quiénes Somos</h2>
+        <p data-i18n="aboutIntro">Somos una empresa especializada en nutrición corporativa, experiencias saludables y acompañamiento integral para organizaciones modernas.</p>
+      </div>
+      <div class="about-grid">
+        <article class="feature-card feature-card--large">
+          <span class="feature-card__icon">🌱</span>
+          <h3 data-i18n="aboutHistoryTitle">Nuestra historia</h3>
+          <p data-i18n="aboutHistoryText">Nacimos para acercar menús equilibrados a entornos de trabajo exigentes. Hoy combinamos tecnología, asesoría nutricional y diseño de espacios para crear hábitos sostenibles.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__icon">🎯</span>
+          <h3 data-i18n="aboutMissionTitle">Misión</h3>
+          <p data-i18n="aboutMissionText">Mejorar el bienestar diario de cada equipo con soluciones alimentarias prácticas, medibles y personalizadas.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__icon">🤝</span>
+          <h3 data-i18n="aboutWhoTitle">Quiénes somos</h3>
+          <p data-i18n="aboutWhoText">Un equipo multidisciplinar de nutricionistas, diseñadores de servicio y especialistas en atención al cliente.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__icon">🚀</span>
+          <h3 data-i18n="aboutDoTitle">Qué hacemos</h3>
+          <p data-i18n="aboutDoText">Creamos planes de alimentación, tiendas saludables, eventos corporativos y experiencias de bienestar para empresas.</p>
+        </article>
+      </div>
+      <div class="section-contact" data-contact-block></div>
+    </section>
+
+    <section class="section section--soft" id="admission" aria-labelledby="admission-title">
+      <div class="section__header">
+        <p class="eyebrow" data-i18n="admissionEyebrow">Página 2</p>
+        <h2 id="admission-title" data-i18n="admissionTitle">Formulario de Ingreso</h2>
+        <p data-i18n="admissionIntro">Completa tus datos para recibir información personalizada. Todos los campos son obligatorios.</p>
+      </div>
+      <div class="form-layout">
+        <form class="admission-form" id="admissionForm" novalidate>
+          <div class="form-field">
+            <label for="fullName" data-i18n="formName">Nombre y Apellidos</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" required minlength="3" placeholder="María García López" data-i18n-placeholder="formNamePlaceholder">
+            <small class="error-message" data-error-for="fullName"></small>
+          </div>
+          <div class="form-field">
+            <label for="email" data-i18n="formEmail">Correo Electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="correo@empresa.com" data-i18n-placeholder="formEmailPlaceholder">
+            <small class="error-message" data-error-for="email"></small>
+          </div>
+          <div class="form-field">
+            <label for="phone" data-i18n="formPhone">Número de Teléfono</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required pattern="^[0-9+()\s-]{7,20}$" placeholder="+34 600 000 000" data-i18n-placeholder="formPhonePlaceholder">
+            <small class="error-message" data-error-for="phone"></small>
+          </div>
+          <button class="btn btn--accent" type="submit" data-i18n="formSubmit">Enviar solicitud</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="form-aside">
+          <h3 data-i18n="formAsideTitle">Tu plan empieza aquí</h3>
+          <ul>
+            <li data-i18n="formBenefit1">Diagnóstico inicial sin coste.</li>
+            <li data-i18n="formBenefit2">Asesoría nutricional adaptada a tu empresa.</li>
+            <li data-i18n="formBenefit3">Respuesta del equipo en menos de 24 horas laborables.</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="section-contact" data-contact-block></div>
+    </section>
+
+    <section class="section" id="location" aria-labelledby="location-title">
+      <div class="section__header">
+        <p class="eyebrow" data-i18n="locationEyebrow">Página 3</p>
+        <h2 id="location-title" data-i18n="locationTitle">Ubicación e Instalaciones</h2>
+        <p data-i18n="locationIntro">Visita nuestras instalaciones: cocina demostrativa, zona de atención y espacios para talleres de bienestar.</p>
+      </div>
+      <div class="location-grid">
+        <div class="map-card">
+          <iframe title="Mapa de ubicación de Nutrivita Corporate" src="https://www.google.com/maps?q=Madrid%2C%20Spain&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="gallery-grid" aria-label="Galería de instalaciones">
+          <figure class="gallery-item gallery-item--tall">
+            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80" alt="Cocina moderna para preparación saludable" loading="lazy">
+            <figcaption data-i18n="galleryKitchen">Cocina demostrativa</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=80" alt="Sala corporativa luminosa" loading="lazy">
+            <figcaption data-i18n="galleryMeeting">Sala de asesoría</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Ingredientes frescos para menús equilibrados" loading="lazy">
+            <figcaption data-i18n="galleryFresh">Zona fresh market</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="section-contact" data-contact-block></div>
+    </section>
+
+    <section class="section section--soft" id="shop" aria-labelledby="shop-title">
+      <div class="section__header">
+        <p class="eyebrow" data-i18n="shopEyebrow">Página 4</p>
+        <h2 id="shop-title" data-i18n="shopTitle">Tienda de Merchandising</h2>
+        <p data-i18n="shopIntro">Productos útiles y sostenibles para llevar el bienestar de la oficina a cualquier lugar.</p>
+      </div>
+      <div class="products-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80" alt="Botella térmica Nutrivita" loading="lazy">
+          <div class="product-card__body">
+            <h3 data-i18n="productBottle">Botella térmica NV</h3>
+            <p class="price">19,90 €</p>
+            <button class="btn btn--accent btn--full" type="button" data-cart-item="Botella térmica NV" data-i18n="shopAdd">Añadir al carrito</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=700&q=80" alt="Camiseta corporativa ecológica" loading="lazy">
+          <div class="product-card__body">
+            <h3 data-i18n="productShirt">Camiseta eco</h3>
+            <p class="price">24,90 €</p>
+            <button class="btn btn--accent btn--full" type="button" data-cart-item="Camiseta eco" data-i18n="shopBuy">Comprar ahora</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=700&q=80" alt="Tote bag reutilizable" loading="lazy">
+          <div class="product-card__body">
+            <h3 data-i18n="productBag">Tote bag saludable</h3>
+            <p class="price">14,90 €</p>
+            <button class="btn btn--accent btn--full" type="button" data-cart-item="Tote bag saludable" data-i18n="shopAdd">Añadir al carrito</button>
+          </div>
+        </article>
+      </div>
+      <p class="cart-feedback" id="cartFeedback" role="status" aria-live="polite"></p>
+      <div class="section-contact" data-contact-block></div>
+    </section>
+
+    <section class="section" id="menus" aria-labelledby="menus-title">
+      <div class="section__header">
+        <p class="eyebrow" data-i18n="menusEyebrow">Página 5</p>
+        <h2 id="menus-title" data-i18n="menusTitle">Menús Equilibrados</h2>
+        <p data-i18n="menusIntro">Ideas saludables para todo el día, pensadas para mantener energía, saciedad y sabor.</p>
+      </div>
+      <div class="tabs" data-tabs>
+        <div class="tab-list" role="tablist" aria-label="Menús del día">
+          <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="breakfast-panel" id="breakfast-tab" data-tab="breakfast" data-i18n="tabBreakfast">Desayuno</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="lunch-panel" id="lunch-tab" data-tab="lunch" data-i18n="tabLunch">Almuerzo</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="dinner-panel" id="dinner-tab" data-tab="dinner" data-i18n="tabDinner">Cena</button>
+        </div>
+        <article class="menu-panel is-active" id="breakfast-panel" role="tabpanel" aria-labelledby="breakfast-tab" data-panel="breakfast">
+          <h3 data-i18n="breakfastTitle">Desayuno energético</h3>
+          <p data-i18n="breakfastText">Yogur griego con avena, frutos rojos, semillas de chía y café o infusión sin azúcar.</p>
+          <span data-i18n="breakfastKcal">Aprox. 420 kcal</span>
+        </article>
+        <article class="menu-panel" id="lunch-panel" role="tabpanel" aria-labelledby="lunch-tab" data-panel="lunch" hidden>
+          <h3 data-i18n="lunchTitle">Almuerzo completo</h3>
+          <p data-i18n="lunchText">Bowl de quinoa, pollo a la plancha, verduras asadas, aguacate y aliño de lima.</p>
+          <span data-i18n="lunchKcal">Aprox. 650 kcal</span>
+        </article>
+        <article class="menu-panel" id="dinner-panel" role="tabpanel" aria-labelledby="dinner-tab" data-panel="dinner" hidden>
+          <h3 data-i18n="dinnerTitle">Cena ligera</h3>
+          <p data-i18n="dinnerText">Crema de verduras, salmón al horno con espárragos y una pieza de fruta de temporada.</p>
+          <span data-i18n="dinnerKcal">Aprox. 520 kcal</span>
+        </article>
+      </div>
+      <div class="section-contact" data-contact-block></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-title">
+    <div>
+      <h2 id="footer-title" data-i18n="contactTitle">Contáctanos</h2>
+      <p data-i18n="contactText">¿Quieres diseñar un programa de bienestar para tu empresa? Escríbenos y te ayudamos.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn--light" href="mailto:tu-correo@gmail.com" data-i18n="contactGmail">Gmail</a>
+      <a class="btn btn--whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsapp">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
