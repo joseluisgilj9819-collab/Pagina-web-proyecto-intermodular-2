@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menús equilibrados del día para rendimiento fitness Mazcufit.">
+  <title>Menús Equilibrados del Día | Mazcufit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir a la página inicial de Mazcufit">
+        <span class="brand__mark">MF</span>
+        <span class="brand__text" data-i18n="brandName">Mazcufit</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-panel" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="nosotros.html" data-nav="nosotros.html" data-i18n="navAbout">Quiénes Somos</a></li>
+          <li><a href="registro.html" data-nav="registro.html" data-i18n="navAdmission">Formulario</a></li>
+          <li><a href="ubicacion.html" data-nav="ubicacion.html" data-i18n="navLocation">Ubicación</a></li>
+          <li><a href="tienda.html" data-nav="tienda.html" data-i18n="navShop">Tienda</a></li>
+          <li><a href="menus.html" data-nav="menus.html" data-i18n="navMenus">Menús</a></li>
+        </ul>
+        <div class="nav-actions">
+          <label class="language-switcher" for="languageSelect">
+            <span class="sr-only" data-i18n="languageLabel">Idioma</span>
+            <select id="languageSelect" aria-label="Seleccionar idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </label>
+          <a class="btn btn--accent btn--small" href="index.html" data-nav="index.html" data-i18n="navHomeButton">Página Inicial</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section page-hero" aria-labelledby="menus-title">
+      <p class="eyebrow" data-i18n="menusEyebrow">Menús equilibrados</p>
+      <h1 id="menus-title" data-i18n="menusTitle">Nutrición del día para rendir mejor.</h1>
+      <p class="page-hero__lead" data-i18n="menusIntro">Ideas saludables para mantener energía, saciedad y foco antes, durante y después de entrenar.</p>
+    </section>
+
+    <section class="page-section compact-section">
+      <div class="tabs" data-tabs>
+        <div class="tab-list" role="tablist" aria-label="Menús del día">
+          <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="breakfast-panel" id="breakfast-tab" data-tab="breakfast" data-i18n="tabBreakfast">Desayuno</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="lunch-panel" id="lunch-tab" data-tab="lunch" data-i18n="tabLunch">Almuerzo</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="dinner-panel" id="dinner-tab" data-tab="dinner" data-i18n="tabDinner">Cena</button>
+        </div>
+        <article class="menu-panel is-active" id="breakfast-panel" role="tabpanel" aria-labelledby="breakfast-tab" data-panel="breakfast">
+          <h2 data-i18n="breakfastTitle">Desayuno pre-entreno</h2>
+          <p data-i18n="breakfastText">Yogur griego con avena, plátano, frutos rojos, semillas de chía y café o infusión sin azúcar.</p>
+          <span data-i18n="breakfastKcal">Aprox. 430 kcal · proteína + energía</span>
+        </article>
+        <article class="menu-panel" id="lunch-panel" role="tabpanel" aria-labelledby="lunch-tab" data-panel="lunch" hidden>
+          <h2 data-i18n="lunchTitle">Almuerzo de recuperación</h2>
+          <p data-i18n="lunchText">Bowl de quinoa, pollo a la plancha, verduras asadas, aguacate y aliño de lima.</p>
+          <span data-i18n="lunchKcal">Aprox. 650 kcal · completo y saciante</span>
+        </article>
+        <article class="menu-panel" id="dinner-panel" role="tabpanel" aria-labelledby="dinner-tab" data-panel="dinner" hidden>
+          <h2 data-i18n="dinnerTitle">Cena ligera fitness</h2>
+          <p data-i18n="dinnerText">Crema de verduras, salmón al horno con espárragos y una pieza de fruta de temporada.</p>
+          <span data-i18n="dinnerKcal">Aprox. 520 kcal · descanso y recuperación</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-title">
+    <div>
+      <p class="eyebrow" data-i18n="contactEyebrow">Contacto directo</p>
+      <h2 id="footer-title" data-i18n="contactTitle">Contáctanos</h2>
+      <p data-i18n="contactText">¿Quieres entrenar, comer mejor o equipar a tu equipo con Mazcufit? Escríbenos y te guiamos.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn--light" href="mailto:tu-correo@gmail.com" data-i18n="contactGmail">Gmail</a>
+      <a class="btn btn--whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsapp">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de ingreso para recibir información personalizada de Mazcufit.">
+  <title>Formulario de Ingreso | Mazcufit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir a la página inicial de Mazcufit">
+        <span class="brand__mark">MF</span>
+        <span class="brand__text" data-i18n="brandName">Mazcufit</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-panel" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="nosotros.html" data-nav="nosotros.html" data-i18n="navAbout">Quiénes Somos</a></li>
+          <li><a href="registro.html" data-nav="registro.html" data-i18n="navAdmission">Formulario</a></li>
+          <li><a href="ubicacion.html" data-nav="ubicacion.html" data-i18n="navLocation">Ubicación</a></li>
+          <li><a href="tienda.html" data-nav="tienda.html" data-i18n="navShop">Tienda</a></li>
+          <li><a href="menus.html" data-nav="menus.html" data-i18n="navMenus">Menús</a></li>
+        </ul>
+        <div class="nav-actions">
+          <label class="language-switcher" for="languageSelect">
+            <span class="sr-only" data-i18n="languageLabel">Idioma</span>
+            <select id="languageSelect" aria-label="Seleccionar idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </label>
+          <a class="btn btn--accent btn--small" href="index.html" data-nav="index.html" data-i18n="navHomeButton">Página Inicial</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section page-hero" aria-labelledby="admission-title">
+      <p class="eyebrow" data-i18n="admissionEyebrow">Formulario de ingreso</p>
+      <h1 id="admission-title" data-i18n="admissionTitle">Da el primer paso hacia tu plan Mazcufit.</h1>
+      <p class="page-hero__lead" data-i18n="admissionIntro">Completa tus datos para recibir información personalizada. Todos los campos son obligatorios.</p>
+    </section>
+
+    <section class="page-section compact-section">
+      <div class="form-layout">
+        <form class="admission-form" id="admissionForm" novalidate>
+          <div class="form-field">
+            <label for="fullName" data-i18n="formName">Nombre y Apellidos</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" required minlength="3" placeholder="María García López" data-i18n-placeholder="formNamePlaceholder">
+            <small class="error-message" data-error-for="fullName"></small>
+          </div>
+          <div class="form-field">
+            <label for="email" data-i18n="formEmail">Correo Electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="correo@empresa.com" data-i18n-placeholder="formEmailPlaceholder">
+            <small class="error-message" data-error-for="email"></small>
+          </div>
+          <div class="form-field">
+            <label for="phone" data-i18n="formPhone">Número de Teléfono</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required pattern="^[0-9+()\s-]{7,20}$" placeholder="+34 600 000 000" data-i18n-placeholder="formPhonePlaceholder">
+            <small class="error-message" data-error-for="phone"></small>
+          </div>
+          <button class="btn btn--accent" type="submit" data-i18n="formSubmit">Enviar solicitud</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="form-aside">
+          <p class="eyebrow" data-i18n="formAsideEyebrow">Plan personalizado</p>
+          <h2 data-i18n="formAsideTitle">Tu progreso empieza aquí</h2>
+          <ul>
+            <li data-i18n="formBenefit1">Diagnóstico inicial sin coste.</li>
+            <li data-i18n="formBenefit2">Asesoría fitness y nutricional adaptada a tu objetivo.</li>
+            <li data-i18n="formBenefit3">Respuesta del equipo en menos de 24 horas laborables.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-title">
+    <div>
+      <p class="eyebrow" data-i18n="contactEyebrow">Contacto directo</p>
+      <h2 id="footer-title" data-i18n="contactTitle">Contáctanos</h2>
+      <p data-i18n="contactText">¿Quieres entrenar, comer mejor o equipar a tu equipo con Mazcufit? Escríbenos y te guiamos.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn--light" href="mailto:tu-correo@gmail.com" data-i18n="contactGmail">Gmail</a>
+      <a class="btn btn--whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsapp">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mazcufit: experiencia fitness premium con entrenamiento, nutrición, tienda e instalaciones.">
+  <title>Mazcufit | Fitness premium y nutrición deportiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir a la página inicial de Mazcufit">
+        <span class="brand__mark">MF</span>
+        <span class="brand__text" data-i18n="brandName">Mazcufit</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-panel" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="nosotros.html" data-nav="nosotros.html" data-i18n="navAbout">Quiénes Somos</a></li>
+          <li><a href="registro.html" data-nav="registro.html" data-i18n="navAdmission">Formulario</a></li>
+          <li><a href="ubicacion.html" data-nav="ubicacion.html" data-i18n="navLocation">Ubicación</a></li>
+          <li><a href="tienda.html" data-nav="tienda.html" data-i18n="navShop">Tienda</a></li>
+          <li><a href="menus.html" data-nav="menus.html" data-i18n="navMenus">Menús</a></li>
+        </ul>
+        <div class="nav-actions">
+          <label class="language-switcher" for="languageSelect">
+            <span class="sr-only" data-i18n="languageLabel">Idioma</span>
+            <select id="languageSelect" aria-label="Seleccionar idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </label>
+          <a class="btn btn--accent btn--small" href="index.html" data-nav="index.html" data-i18n="navHomeButton">Página Inicial</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-section" aria-labelledby="home-title">
+      <div class="hero__content">
+        <p class="eyebrow" data-i18n="heroEyebrow">Fitness premium · nutrición · rendimiento</p>
+        <div class="hero__logo" aria-label="Logotipo grande de Mazcufit">
+          <span class="hero__logo-mark">MF</span>
+          <span class="hero__logo-text" data-i18n="brandName">Mazcufit</span>
+        </div>
+        <h1 id="home-title" data-i18n="heroTitle">Entrena fuerte. Come inteligente. Vive Mazcufit.</h1>
+        <p class="hero__lead" data-i18n="heroLead">Un ecosistema fitness corporativo para mejorar tu energía diaria con entrenamientos, menús equilibrados, instalaciones funcionales y merchandising deportivo.</p>
+        <div class="hero__buttons">
+          <a class="btn btn--accent" href="registro.html" data-i18n="heroPrimary">Entrar en Mazcufit</a>
+          <a class="btn btn--ghost" href="nosotros.html" data-i18n="heroSecondary">Conoce la marca</a>
+        </div>
+      </div>
+      <aside class="hero__card" aria-label="Métrica destacada">
+        <div class="performance-ring"><span>24/7</span></div>
+        <p data-i18n="heroMetric">Mentalidad activa, nutrición real y progreso medible.</p>
+      </aside>
+    </section>
+
+    <section class="page-section compact-section" aria-labelledby="home-services-title">
+      <div class="section__header">
+        <p class="eyebrow" data-i18n="homeServicesEyebrow">Experiencia integral</p>
+        <h2 id="home-services-title" data-i18n="homeServicesTitle">Todo lo que necesitas para activar tu mejor versión</h2>
+      </div>
+      <div class="cards-grid cards-grid--three">
+        <article class="feature-card">
+          <span class="feature-card__icon">🏋️</span>
+          <h3 data-i18n="homeCardTrainingTitle">Entrenamiento funcional</h3>
+          <p data-i18n="homeCardTrainingText">Programas adaptados para fuerza, movilidad, resistencia y hábitos sostenibles.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__icon">🥗</span>
+          <h3 data-i18n="homeCardNutritionTitle">Nutrición equilibrada</h3>
+          <p data-i18n="homeCardNutritionText">Menús del día diseñados para rendir sin renunciar al sabor.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__icon">⚡</span>
+          <h3 data-i18n="homeCardGearTitle">Equipamiento Mazcufit</h3>
+          <p data-i18n="homeCardGearText">Merchandising premium para entrenar dentro y fuera del gimnasio.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-title">
+    <div>
+      <p class="eyebrow" data-i18n="contactEyebrow">Contacto directo</p>
+      <h2 id="footer-title" data-i18n="contactTitle">Contáctanos</h2>
+      <p data-i18n="contactText">¿Quieres entrenar, comer mejor o equipar a tu equipo con Mazcufit? Escríbenos y te guiamos.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn--light" href="mailto:tu-correo@gmail.com" data-i18n="contactGmail">Gmail</a>
+      <a class="btn btn--whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsapp">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

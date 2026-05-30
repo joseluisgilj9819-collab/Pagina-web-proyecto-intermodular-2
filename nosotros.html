@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce la historia, misión y servicios de Mazcufit.">
+  <title>Quiénes Somos | Mazcufit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir a la página inicial de Mazcufit">
+        <span class="brand__mark">MF</span>
+        <span class="brand__text" data-i18n="brandName">Mazcufit</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-panel" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="nosotros.html" data-nav="nosotros.html" data-i18n="navAbout">Quiénes Somos</a></li>
+          <li><a href="registro.html" data-nav="registro.html" data-i18n="navAdmission">Formulario</a></li>
+          <li><a href="ubicacion.html" data-nav="ubicacion.html" data-i18n="navLocation">Ubicación</a></li>
+          <li><a href="tienda.html" data-nav="tienda.html" data-i18n="navShop">Tienda</a></li>
+          <li><a href="menus.html" data-nav="menus.html" data-i18n="navMenus">Menús</a></li>
+        </ul>
+        <div class="nav-actions">
+          <label class="language-switcher" for="languageSelect">
+            <span class="sr-only" data-i18n="languageLabel">Idioma</span>
+            <select id="languageSelect" aria-label="Seleccionar idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </label>
+          <a class="btn btn--accent btn--small" href="index.html" data-nav="index.html" data-i18n="navHomeButton">Página Inicial</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section page-hero" aria-labelledby="about-title">
+      <p class="eyebrow" data-i18n="aboutEyebrow">Quiénes Somos</p>
+      <h1 id="about-title" data-i18n="aboutTitle">Mazcufit une entrenamiento, nutrición y comunidad.</h1>
+      <p class="page-hero__lead" data-i18n="aboutIntro">Somos una marca fitness premium creada para personas y empresas que quieren transformar su bienestar con una experiencia práctica, intensa y sostenible.</p>
+    </section>
+
+    <section class="page-section compact-section">
+      <div class="about-layout">
+        <article class="feature-card feature-card--large">
+          <span class="feature-card__icon">🔥</span>
+          <h2 data-i18n="aboutHistoryTitle">Nuestra historia</h2>
+          <p data-i18n="aboutHistoryText">Mazcufit nace de una idea clara: el fitness no debe sentirse improvisado. Diseñamos una metodología que combina movimiento, alimentación y motivación para que cada usuario note progreso real.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__icon">🎯</span>
+          <h2 data-i18n="aboutMissionTitle">Misión</h2>
+          <p data-i18n="aboutMissionText">Impulsar hábitos activos y saludables con programas accesibles, medibles y visualmente inspiradores.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__icon">🤝</span>
+          <h2 data-i18n="aboutWhoTitle">Equipo</h2>
+          <p data-i18n="aboutWhoText">Entrenadores, asesores nutricionales y diseñadores de experiencia unidos para crear servicios fitness memorables.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__icon">🚀</span>
+          <h2 data-i18n="aboutDoTitle">Qué hacemos</h2>
+          <p data-i18n="aboutDoText">Creamos planes de entrenamiento, menús equilibrados, eventos deportivos, tienda de marca y programas corporativos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-title">
+    <div>
+      <p class="eyebrow" data-i18n="contactEyebrow">Contacto directo</p>
+      <h2 id="footer-title" data-i18n="contactTitle">Contáctanos</h2>
+      <p data-i18n="contactText">¿Quieres entrenar, comer mejor o equipar a tu equipo con Mazcufit? Escríbenos y te guiamos.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn--light" href="mailto:tu-correo@gmail.com" data-i18n="contactGmail">Gmail</a>
+      <a class="btn btn--whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsapp">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

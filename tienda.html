@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda de merchandising deportivo Mazcufit.">
+  <title>Tienda de Merchandising Mazcufit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir a la página inicial de Mazcufit">
+        <span class="brand__mark">MF</span>
+        <span class="brand__text" data-i18n="brandName">Mazcufit</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-panel" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="nosotros.html" data-nav="nosotros.html" data-i18n="navAbout">Quiénes Somos</a></li>
+          <li><a href="registro.html" data-nav="registro.html" data-i18n="navAdmission">Formulario</a></li>
+          <li><a href="ubicacion.html" data-nav="ubicacion.html" data-i18n="navLocation">Ubicación</a></li>
+          <li><a href="tienda.html" data-nav="tienda.html" data-i18n="navShop">Tienda</a></li>
+          <li><a href="menus.html" data-nav="menus.html" data-i18n="navMenus">Menús</a></li>
+        </ul>
+        <div class="nav-actions">
+          <label class="language-switcher" for="languageSelect">
+            <span class="sr-only" data-i18n="languageLabel">Idioma</span>
+            <select id="languageSelect" aria-label="Seleccionar idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </label>
+          <a class="btn btn--accent btn--small" href="index.html" data-nav="index.html" data-i18n="navHomeButton">Página Inicial</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section page-hero" aria-labelledby="shop-title">
+      <p class="eyebrow" data-i18n="shopEyebrow">Tienda Mazcufit</p>
+      <h1 id="shop-title" data-i18n="shopTitle">Merchandising deportivo Mazcufit.</h1>
+      <p class="page-hero__lead" data-i18n="shopIntro">Productos de marca con estética premium para entrenar, hidratarte y llevar tu mentalidad fitness a todas partes.</p>
+    </section>
+
+    <section class="page-section compact-section">
+      <div class="products-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80" alt="Shaker térmico Mazcufit" loading="lazy">
+          <div class="product-card__body">
+            <h2 data-i18n="productBottle">Shaker térmico Mazcufit</h2>
+            <p class="price">19,90 €</p>
+            <button class="btn btn--accent btn--full" type="button" data-cart-item="Shaker térmico Mazcufit" data-i18n="shopAdd">Añadir al carrito</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1571945153237-4929e783af4a?auto=format&fit=crop&w=700&q=80" alt="Camiseta deportiva Mazcufit" loading="lazy">
+          <div class="product-card__body">
+            <h2 data-i18n="productShirt">Camiseta performance MF</h2>
+            <p class="price">24,90 €</p>
+            <button class="btn btn--accent btn--full" type="button" data-cart-item="Camiseta performance MF" data-i18n="shopBuy">Comprar ahora</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=700&q=80" alt="Mochila deportiva Mazcufit" loading="lazy">
+          <div class="product-card__body">
+            <h2 data-i18n="productBag">Mochila gym Mazcufit</h2>
+            <p class="price">34,90 €</p>
+            <button class="btn btn--accent btn--full" type="button" data-cart-item="Mochila gym Mazcufit" data-i18n="shopAdd">Añadir al carrito</button>
+          </div>
+        </article>
+      </div>
+      <p class="cart-feedback" id="cartFeedback" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-title">
+    <div>
+      <p class="eyebrow" data-i18n="contactEyebrow">Contacto directo</p>
+      <h2 id="footer-title" data-i18n="contactTitle">Contáctanos</h2>
+      <p data-i18n="contactText">¿Quieres entrenar, comer mejor o equipar a tu equipo con Mazcufit? Escríbenos y te guiamos.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn--light" href="mailto:tu-correo@gmail.com" data-i18n="contactGmail">Gmail</a>
+      <a class="btn btn--whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsapp">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
