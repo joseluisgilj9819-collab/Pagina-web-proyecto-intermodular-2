@@ -5,7 +5,7 @@ const contactInfo = {
 
 const translations = {
   es: {
-    brandName: "Nutrivita Corporate",
+    brandName: "Mazcufit",
     languageLabel: "Idioma",
     navAbout: "Quiénes Somos",
     navAdmission: "Formulario",
@@ -13,25 +13,33 @@ const translations = {
     navShop: "Tienda",
     navMenus: "Menús",
     navHomeButton: "Página Inicial",
-    heroEyebrow: "Bienestar corporativo inteligente",
-    heroTitle: "Nutrición saludable para equipos con alto rendimiento.",
-    heroLead: "Diseñamos experiencias de alimentación equilibrada, espacios inspiradores y servicios corporativos que impulsan la energía de tu organización.",
-    heroPrimary: "Inscríbete ahora",
-    heroSecondary: "Conoce la empresa",
-    heroMetric: "Satisfacción en programas de bienestar",
-    aboutEyebrow: "Página 1",
-    aboutTitle: "Quiénes Somos",
-    aboutIntro: "Somos una empresa especializada en nutrición corporativa, experiencias saludables y acompañamiento integral para organizaciones modernas.",
+    heroEyebrow: "Fitness premium · nutrición · rendimiento",
+    heroTitle: "Entrena fuerte. Come inteligente. Vive Mazcufit.",
+    heroLead: "Un ecosistema fitness corporativo para mejorar tu energía diaria con entrenamientos, menús equilibrados, instalaciones funcionales y merchandising deportivo.",
+    heroPrimary: "Entrar en Mazcufit",
+    heroSecondary: "Conoce la marca",
+    heroMetric: "Mentalidad activa, nutrición real y progreso medible.",
+    homeServicesEyebrow: "Experiencia integral",
+    homeServicesTitle: "Todo lo que necesitas para activar tu mejor versión",
+    homeCardTrainingTitle: "Entrenamiento funcional",
+    homeCardTrainingText: "Programas adaptados para fuerza, movilidad, resistencia y hábitos sostenibles.",
+    homeCardNutritionTitle: "Nutrición equilibrada",
+    homeCardNutritionText: "Menús del día diseñados para rendir sin renunciar al sabor.",
+    homeCardGearTitle: "Equipamiento Mazcufit",
+    homeCardGearText: "Merchandising premium para entrenar dentro y fuera del gimnasio.",
+    aboutEyebrow: "Quiénes Somos",
+    aboutTitle: "Mazcufit une entrenamiento, nutrición y comunidad.",
+    aboutIntro: "Somos una marca fitness premium creada para personas y empresas que quieren transformar su bienestar con una experiencia práctica, intensa y sostenible.",
     aboutHistoryTitle: "Nuestra historia",
-    aboutHistoryText: "Nacimos para acercar menús equilibrados a entornos de trabajo exigentes. Hoy combinamos tecnología, asesoría nutricional y diseño de espacios para crear hábitos sostenibles.",
+    aboutHistoryText: "Mazcufit nace de una idea clara: el fitness no debe sentirse improvisado. Diseñamos una metodología que combina movimiento, alimentación y motivación para que cada usuario note progreso real.",
     aboutMissionTitle: "Misión",
-    aboutMissionText: "Mejorar el bienestar diario de cada equipo con soluciones alimentarias prácticas, medibles y personalizadas.",
-    aboutWhoTitle: "Quiénes somos",
-    aboutWhoText: "Un equipo multidisciplinar de nutricionistas, diseñadores de servicio y especialistas en atención al cliente.",
+    aboutMissionText: "Impulsar hábitos activos y saludables con programas accesibles, medibles y visualmente inspiradores.",
+    aboutWhoTitle: "Equipo",
+    aboutWhoText: "Entrenadores, asesores nutricionales y diseñadores de experiencia unidos para crear servicios fitness memorables.",
     aboutDoTitle: "Qué hacemos",
-    aboutDoText: "Creamos planes de alimentación, tiendas saludables, eventos corporativos y experiencias de bienestar para empresas.",
-    admissionEyebrow: "Página 2",
-    admissionTitle: "Formulario de Ingreso",
+    aboutDoText: "Creamos planes de entrenamiento, menús equilibrados, eventos deportivos, tienda de marca y programas corporativos.",
+    admissionEyebrow: "Formulario de ingreso",
+    admissionTitle: "Da el primer paso hacia tu plan Mazcufit.",
     admissionIntro: "Completa tus datos para recibir información personalizada. Todos los campos son obligatorios.",
     formName: "Nombre y Apellidos",
     formNamePlaceholder: "María García López",
@@ -40,51 +48,53 @@ const translations = {
     formPhone: "Número de Teléfono",
     formPhonePlaceholder: "+34 600 000 000",
     formSubmit: "Enviar solicitud",
-    formAsideTitle: "Tu plan empieza aquí",
+    formAsideEyebrow: "Plan personalizado",
+    formAsideTitle: "Tu progreso empieza aquí",
     formBenefit1: "Diagnóstico inicial sin coste.",
-    formBenefit2: "Asesoría nutricional adaptada a tu empresa.",
+    formBenefit2: "Asesoría fitness y nutricional adaptada a tu objetivo.",
     formBenefit3: "Respuesta del equipo en menos de 24 horas laborables.",
     formRequired: "Este campo es obligatorio.",
     formEmailError: "Introduce un correo electrónico válido.",
     formPhoneError: "Introduce un teléfono válido.",
-    formSuccess: "Solicitud enviada correctamente. Nos pondremos en contacto contigo muy pronto.",
-    locationEyebrow: "Página 3",
-    locationTitle: "Ubicación e Instalaciones",
-    locationIntro: "Visita nuestras instalaciones: cocina demostrativa, zona de atención y espacios para talleres de bienestar.",
-    galleryKitchen: "Cocina demostrativa",
-    galleryMeeting: "Sala de asesoría",
-    galleryFresh: "Zona fresh market",
-    shopEyebrow: "Página 4",
-    shopTitle: "Tienda de Merchandising",
-    shopIntro: "Productos útiles y sostenibles para llevar el bienestar de la oficina a cualquier lugar.",
-    productBottle: "Botella térmica NV",
-    productShirt: "Camiseta eco",
-    productBag: "Tote bag saludable",
+    formSuccess: "Solicitud enviada correctamente. El equipo Mazcufit contactará contigo muy pronto.",
+    locationEyebrow: "Ubicación e instalaciones",
+    locationTitle: "Espacios preparados para entrenar con intensidad.",
+    locationIntro: "Visita nuestras instalaciones: zona funcional, estudio de asesoría, área de nutrición y espacios para retos grupales.",
+    galleryTraining: "Zona funcional",
+    galleryWeights: "Área de fuerza",
+    galleryNutrition: "Nutrición deportiva",
+    shopEyebrow: "Tienda Mazcufit",
+    shopTitle: "Merchandising deportivo Mazcufit.",
+    shopIntro: "Productos de marca con estética premium para entrenar, hidratarte y llevar tu mentalidad fitness a todas partes.",
+    productBottle: "Shaker térmico Mazcufit",
+    productShirt: "Camiseta performance MF",
+    productBag: "Mochila gym Mazcufit",
     shopAdd: "Añadir al carrito",
     shopBuy: "Comprar ahora",
     cartAdded: "Producto añadido: {item}.",
-    menusEyebrow: "Página 5",
-    menusTitle: "Menús Equilibrados",
-    menusIntro: "Ideas saludables para todo el día, pensadas para mantener energía, saciedad y sabor.",
+    menusEyebrow: "Menús equilibrados",
+    menusTitle: "Nutrición del día para rendir mejor.",
+    menusIntro: "Ideas saludables para mantener energía, saciedad y foco antes, durante y después de entrenar.",
     tabBreakfast: "Desayuno",
     tabLunch: "Almuerzo",
     tabDinner: "Cena",
-    breakfastTitle: "Desayuno energético",
-    breakfastText: "Yogur griego con avena, frutos rojos, semillas de chía y café o infusión sin azúcar.",
-    breakfastKcal: "Aprox. 420 kcal",
-    lunchTitle: "Almuerzo completo",
+    breakfastTitle: "Desayuno pre-entreno",
+    breakfastText: "Yogur griego con avena, plátano, frutos rojos, semillas de chía y café o infusión sin azúcar.",
+    breakfastKcal: "Aprox. 430 kcal · proteína + energía",
+    lunchTitle: "Almuerzo de recuperación",
     lunchText: "Bowl de quinoa, pollo a la plancha, verduras asadas, aguacate y aliño de lima.",
-    lunchKcal: "Aprox. 650 kcal",
-    dinnerTitle: "Cena ligera",
+    lunchKcal: "Aprox. 650 kcal · completo y saciante",
+    dinnerTitle: "Cena ligera fitness",
     dinnerText: "Crema de verduras, salmón al horno con espárragos y una pieza de fruta de temporada.",
-    dinnerKcal: "Aprox. 520 kcal",
+    dinnerKcal: "Aprox. 520 kcal · descanso y recuperación",
+    contactEyebrow: "Contacto directo",
     contactTitle: "Contáctanos",
-    contactText: "¿Quieres diseñar un programa de bienestar para tu empresa? Escríbenos y te ayudamos.",
+    contactText: "¿Quieres entrenar, comer mejor o equipar a tu equipo con Mazcufit? Escríbenos y te guiamos.",
     contactGmail: "Gmail",
     contactWhatsapp: "WhatsApp",
   },
   en: {
-    brandName: "Nutrivita Corporate",
+    brandName: "Mazcufit",
     languageLabel: "Language",
     navAbout: "About Us",
     navAdmission: "Form",
@@ -92,25 +102,33 @@ const translations = {
     navShop: "Store",
     navMenus: "Menus",
     navHomeButton: "Home Page",
-    heroEyebrow: "Smart corporate wellness",
-    heroTitle: "Healthy nutrition for high-performing teams.",
-    heroLead: "We design balanced food experiences, inspiring spaces, and corporate services that boost your organization's energy.",
-    heroPrimary: "Join now",
-    heroSecondary: "Meet the company",
-    heroMetric: "Satisfaction in wellness programs",
-    aboutEyebrow: "Page 1",
-    aboutTitle: "About Us",
-    aboutIntro: "We are a company specialized in corporate nutrition, healthy experiences, and comprehensive support for modern organizations.",
+    heroEyebrow: "Premium fitness · nutrition · performance",
+    heroTitle: "Train hard. Eat smart. Live Mazcufit.",
+    heroLead: "A corporate fitness ecosystem to improve your daily energy with training, balanced menus, functional facilities, and sports merchandising.",
+    heroPrimary: "Join Mazcufit",
+    heroSecondary: "Meet the brand",
+    heroMetric: "Active mindset, real nutrition, and measurable progress.",
+    homeServicesEyebrow: "Integrated experience",
+    homeServicesTitle: "Everything you need to activate your best version",
+    homeCardTrainingTitle: "Functional training",
+    homeCardTrainingText: "Programs adapted for strength, mobility, endurance, and sustainable habits.",
+    homeCardNutritionTitle: "Balanced nutrition",
+    homeCardNutritionText: "Daily menus designed for performance without sacrificing flavor.",
+    homeCardGearTitle: "Mazcufit gear",
+    homeCardGearText: "Premium merchandising to train inside and outside the gym.",
+    aboutEyebrow: "About Us",
+    aboutTitle: "Mazcufit brings training, nutrition, and community together.",
+    aboutIntro: "We are a premium fitness brand created for people and companies that want to transform wellbeing with a practical, intense, and sustainable experience.",
     aboutHistoryTitle: "Our story",
-    aboutHistoryText: "We were born to bring balanced menus to demanding workplaces. Today we combine technology, nutritional advice, and space design to create sustainable habits.",
+    aboutHistoryText: "Mazcufit was born from a clear idea: fitness should not feel improvised. We design a methodology that combines movement, food, and motivation so every user sees real progress.",
     aboutMissionTitle: "Mission",
-    aboutMissionText: "Improve each team's daily wellbeing with practical, measurable, and customized food solutions.",
-    aboutWhoTitle: "Who we are",
-    aboutWhoText: "A multidisciplinary team of nutritionists, service designers, and customer care specialists.",
+    aboutMissionText: "Promote active, healthy habits through accessible, measurable, and visually inspiring programs.",
+    aboutWhoTitle: "Team",
+    aboutWhoText: "Trainers, nutrition advisors, and experience designers united to create memorable fitness services.",
     aboutDoTitle: "What we do",
-    aboutDoText: "We create meal plans, healthy stores, corporate events, and wellness experiences for companies.",
-    admissionEyebrow: "Page 2",
-    admissionTitle: "Admission Form",
+    aboutDoText: "We create training plans, balanced menus, sports events, branded store products, and corporate programs.",
+    admissionEyebrow: "Admission form",
+    admissionTitle: "Take the first step toward your Mazcufit plan.",
     admissionIntro: "Complete your details to receive personalized information. Every field is required.",
     formName: "Full Name",
     formNamePlaceholder: "Mary Garcia Lopez",
@@ -119,57 +137,60 @@ const translations = {
     formPhone: "Phone Number",
     formPhonePlaceholder: "+1 555 000 0000",
     formSubmit: "Submit request",
-    formAsideTitle: "Your plan starts here",
+    formAsideEyebrow: "Personalized plan",
+    formAsideTitle: "Your progress starts here",
     formBenefit1: "Free initial diagnosis.",
-    formBenefit2: "Nutritional consulting tailored to your company.",
+    formBenefit2: "Fitness and nutrition advice adapted to your goal.",
     formBenefit3: "Team response in less than 24 business hours.",
     formRequired: "This field is required.",
     formEmailError: "Enter a valid email address.",
     formPhoneError: "Enter a valid phone number.",
-    formSuccess: "Request submitted successfully. We will contact you very soon.",
-    locationEyebrow: "Page 3",
-    locationTitle: "Location & Facilities",
-    locationIntro: "Visit our facilities: demo kitchen, customer area, and spaces for wellness workshops.",
-    galleryKitchen: "Demo kitchen",
-    galleryMeeting: "Consulting room",
-    galleryFresh: "Fresh market area",
-    shopEyebrow: "Page 4",
-    shopTitle: "Merchandise Store",
-    shopIntro: "Useful, sustainable products to take office wellbeing anywhere.",
-    productBottle: "NV thermal bottle",
-    productShirt: "Eco t-shirt",
-    productBag: "Healthy tote bag",
+    formSuccess: "Request submitted successfully. The Mazcufit team will contact you very soon.",
+    locationEyebrow: "Location & facilities",
+    locationTitle: "Spaces prepared for high-intensity training.",
+    locationIntro: "Visit our facilities: functional area, consulting studio, nutrition area, and spaces for group challenges.",
+    galleryTraining: "Functional zone",
+    galleryWeights: "Strength area",
+    galleryNutrition: "Sports nutrition",
+    shopEyebrow: "Mazcufit store",
+    shopTitle: "Mazcufit sports merchandising.",
+    shopIntro: "Branded products with a premium aesthetic to train, stay hydrated, and carry your fitness mindset everywhere.",
+    productBottle: "Mazcufit thermal shaker",
+    productShirt: "MF performance t-shirt",
+    productBag: "Mazcufit gym backpack",
     shopAdd: "Add to cart",
     shopBuy: "Buy now",
     cartAdded: "Product added: {item}.",
-    menusEyebrow: "Page 5",
-    menusTitle: "Balanced Menus",
-    menusIntro: "Healthy ideas for the whole day, designed to maintain energy, satiety, and flavor.",
+    menusEyebrow: "Balanced menus",
+    menusTitle: "Daily nutrition for better performance.",
+    menusIntro: "Healthy ideas to maintain energy, satiety, and focus before, during, and after training.",
     tabBreakfast: "Breakfast",
     tabLunch: "Lunch",
     tabDinner: "Dinner",
-    breakfastTitle: "Energizing breakfast",
-    breakfastText: "Greek yogurt with oats, berries, chia seeds, and unsweetened coffee or tea.",
-    breakfastKcal: "Approx. 420 kcal",
-    lunchTitle: "Complete lunch",
+    breakfastTitle: "Pre-workout breakfast",
+    breakfastText: "Greek yogurt with oats, banana, berries, chia seeds, and unsweetened coffee or tea.",
+    breakfastKcal: "Approx. 430 kcal · protein + energy",
+    lunchTitle: "Recovery lunch",
     lunchText: "Quinoa bowl, grilled chicken, roasted vegetables, avocado, and lime dressing.",
-    lunchKcal: "Approx. 650 kcal",
-    dinnerTitle: "Light dinner",
+    lunchKcal: "Approx. 650 kcal · complete and filling",
+    dinnerTitle: "Light fitness dinner",
     dinnerText: "Vegetable cream soup, baked salmon with asparagus, and seasonal fruit.",
-    dinnerKcal: "Approx. 520 kcal",
+    dinnerKcal: "Approx. 520 kcal · rest and recovery",
+    contactEyebrow: "Direct contact",
     contactTitle: "Contact us",
-    contactText: "Want to design a wellness program for your company? Write to us and we will help you.",
+    contactText: "Want to train, eat better, or equip your team with Mazcufit? Write to us and we will guide you.",
     contactGmail: "Gmail",
     contactWhatsapp: "WhatsApp",
   },
 };
 
-let currentLanguage = "es";
+let currentLanguage = localStorage.getItem("mazcufit-language") || "es";
 
 const getTranslation = (key) => translations[currentLanguage][key] || translations.es[key] || key;
 
 const applyTranslations = (language) => {
   currentLanguage = translations[language] ? language : "es";
+  localStorage.setItem("mazcufit-language", currentLanguage);
   document.documentElement.lang = currentLanguage;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
@@ -182,28 +203,19 @@ const applyTranslations = (language) => {
     element.placeholder = getTranslation(key);
   });
 
-  renderContactBlocks();
-};
-
-const renderContactBlocks = () => {
-  document.querySelectorAll("[data-contact-block]").forEach((block) => {
-    block.innerHTML = `
-      <div>
-        <h3>${getTranslation("contactTitle")}</h3>
-        <p>${getTranslation("contactText")}</p>
-      </div>
-      <div class="contact-actions">
-        <a class="btn btn--ghost" href="mailto:${contactInfo.email}">${getTranslation("contactGmail")}</a>
-        <a class="btn btn--whatsapp" href="https://wa.me/${contactInfo.whatsapp}" target="_blank" rel="noopener noreferrer">${getTranslation("contactWhatsapp")}</a>
-      </div>
-    `;
-  });
+  const languageSelect = document.querySelector("#languageSelect");
+  if (languageSelect) {
+    languageSelect.value = currentLanguage;
+  }
 };
 
 const setupNavigation = () => {
   const toggle = document.querySelector(".nav-toggle");
   const panel = document.querySelector(".nav-panel");
-  const links = document.querySelectorAll(".nav-panel a");
+
+  if (!toggle || !panel) {
+    return;
+  }
 
   toggle.addEventListener("click", () => {
     const isOpen = panel.classList.toggle("is-open");
@@ -211,18 +223,30 @@ const setupNavigation = () => {
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  links.forEach((link) => {
+  document.querySelectorAll(".nav-panel a").forEach((link) => {
     link.addEventListener("click", () => {
       panel.classList.remove("is-open");
       toggle.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
     });
   });
+
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll("[data-nav]").forEach((link) => {
+    if (link.dataset.nav === currentPage) {
+      link.classList.add("is-active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
 };
 
 const setupForm = () => {
   const form = document.querySelector("#admissionForm");
   const status = document.querySelector("#formStatus");
+
+  if (!form || !status) {
+    return;
+  }
 
   const showFieldError = (field, message) => {
     const error = document.querySelector(`[data-error-for="${field.id}"]`);
@@ -272,6 +296,10 @@ const setupTabs = () => {
   const buttons = document.querySelectorAll("[data-tab]");
   const panels = document.querySelectorAll("[data-panel]");
 
+  if (!buttons.length || !panels.length) {
+    return;
+  }
+
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const target = button.dataset.tab;
@@ -294,6 +322,10 @@ const setupTabs = () => {
 const setupCart = () => {
   const feedback = document.querySelector("#cartFeedback");
 
+  if (!feedback) {
+    return;
+  }
+
   document.querySelectorAll("[data-cart-item]").forEach((button) => {
     button.addEventListener("click", () => {
       feedback.textContent = getTranslation("cartAdded").replace("{item}", button.dataset.cartItem);
@@ -304,6 +336,10 @@ const setupCart = () => {
 
 const setupLanguageSwitcher = () => {
   const languageSelect = document.querySelector("#languageSelect");
+
+  if (!languageSelect) {
+    return;
+  }
 
   languageSelect.addEventListener("change", (event) => {
     applyTranslations(event.target.value);

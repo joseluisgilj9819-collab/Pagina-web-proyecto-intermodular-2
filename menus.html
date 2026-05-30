@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mazcufit: experiencia fitness premium con entrenamiento, nutrición, tienda e instalaciones.">
-  <title>Mazcufit | Fitness premium y nutrición deportiva</title>
+  <meta name="description" content="Menús equilibrados del día para rendimiento fitness Mazcufit.">
+  <title>Menús Equilibrados del Día | Mazcufit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="home-page">
+<body>
   <header class="site-header">
     <nav class="navbar" aria-label="Navegación principal">
       <a class="brand" href="index.html" aria-label="Ir a la página inicial de Mazcufit">
@@ -45,46 +45,33 @@
   </header>
 
   <main>
-    <section class="hero page-section" aria-labelledby="home-title">
-      <div class="hero__content">
-        <p class="eyebrow" data-i18n="heroEyebrow">Fitness premium · nutrición · rendimiento</p>
-        <div class="hero__logo" aria-label="Logotipo grande de Mazcufit">
-          <span class="hero__logo-mark">MF</span>
-          <span class="hero__logo-text" data-i18n="brandName">Mazcufit</span>
-        </div>
-        <h1 id="home-title" data-i18n="heroTitle">Entrena fuerte. Come inteligente. Vive Mazcufit.</h1>
-        <p class="hero__lead" data-i18n="heroLead">Un ecosistema fitness corporativo para mejorar tu energía diaria con entrenamientos, menús equilibrados, instalaciones funcionales y merchandising deportivo.</p>
-        <div class="hero__buttons">
-          <a class="btn btn--accent" href="registro.html" data-i18n="heroPrimary">Entrar en Mazcufit</a>
-          <a class="btn btn--ghost" href="nosotros.html" data-i18n="heroSecondary">Conoce la marca</a>
-        </div>
-      </div>
-      <aside class="hero__card" aria-label="Métrica destacada">
-        <div class="performance-ring"><span>24/7</span></div>
-        <p data-i18n="heroMetric">Mentalidad activa, nutrición real y progreso medible.</p>
-      </aside>
+    <section class="page-section page-hero" aria-labelledby="menus-title">
+      <p class="eyebrow" data-i18n="menusEyebrow">Menús equilibrados</p>
+      <h1 id="menus-title" data-i18n="menusTitle">Nutrición del día para rendir mejor.</h1>
+      <p class="page-hero__lead" data-i18n="menusIntro">Ideas saludables para mantener energía, saciedad y foco antes, durante y después de entrenar.</p>
     </section>
 
-    <section class="page-section compact-section" aria-labelledby="home-services-title">
-      <div class="section__header">
-        <p class="eyebrow" data-i18n="homeServicesEyebrow">Experiencia integral</p>
-        <h2 id="home-services-title" data-i18n="homeServicesTitle">Todo lo que necesitas para activar tu mejor versión</h2>
-      </div>
-      <div class="cards-grid cards-grid--three">
-        <article class="feature-card">
-          <span class="feature-card__icon">🏋️</span>
-          <h3 data-i18n="homeCardTrainingTitle">Entrenamiento funcional</h3>
-          <p data-i18n="homeCardTrainingText">Programas adaptados para fuerza, movilidad, resistencia y hábitos sostenibles.</p>
+    <section class="page-section compact-section">
+      <div class="tabs" data-tabs>
+        <div class="tab-list" role="tablist" aria-label="Menús del día">
+          <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="breakfast-panel" id="breakfast-tab" data-tab="breakfast" data-i18n="tabBreakfast">Desayuno</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="lunch-panel" id="lunch-tab" data-tab="lunch" data-i18n="tabLunch">Almuerzo</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="dinner-panel" id="dinner-tab" data-tab="dinner" data-i18n="tabDinner">Cena</button>
+        </div>
+        <article class="menu-panel is-active" id="breakfast-panel" role="tabpanel" aria-labelledby="breakfast-tab" data-panel="breakfast">
+          <h2 data-i18n="breakfastTitle">Desayuno pre-entreno</h2>
+          <p data-i18n="breakfastText">Yogur griego con avena, plátano, frutos rojos, semillas de chía y café o infusión sin azúcar.</p>
+          <span data-i18n="breakfastKcal">Aprox. 430 kcal · proteína + energía</span>
         </article>
-        <article class="feature-card">
-          <span class="feature-card__icon">🥗</span>
-          <h3 data-i18n="homeCardNutritionTitle">Nutrición equilibrada</h3>
-          <p data-i18n="homeCardNutritionText">Menús del día diseñados para rendir sin renunciar al sabor.</p>
+        <article class="menu-panel" id="lunch-panel" role="tabpanel" aria-labelledby="lunch-tab" data-panel="lunch" hidden>
+          <h2 data-i18n="lunchTitle">Almuerzo de recuperación</h2>
+          <p data-i18n="lunchText">Bowl de quinoa, pollo a la plancha, verduras asadas, aguacate y aliño de lima.</p>
+          <span data-i18n="lunchKcal">Aprox. 650 kcal · completo y saciante</span>
         </article>
-        <article class="feature-card">
-          <span class="feature-card__icon">⚡</span>
-          <h3 data-i18n="homeCardGearTitle">Equipamiento Mazcufit</h3>
-          <p data-i18n="homeCardGearText">Merchandising premium para entrenar dentro y fuera del gimnasio.</p>
+        <article class="menu-panel" id="dinner-panel" role="tabpanel" aria-labelledby="dinner-tab" data-panel="dinner" hidden>
+          <h2 data-i18n="dinnerTitle">Cena ligera fitness</h2>
+          <p data-i18n="dinnerText">Crema de verduras, salmón al horno con espárragos y una pieza de fruta de temporada.</p>
+          <span data-i18n="dinnerKcal">Aprox. 520 kcal · descanso y recuperación</span>
         </article>
       </div>
     </section>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mazcufit: experiencia fitness premium con entrenamiento, nutrición, tienda e instalaciones.">
-  <title>Mazcufit | Fitness premium y nutrición deportiva</title>
+  <meta name="description" content="Formulario de ingreso para recibir información personalizada de Mazcufit.">
+  <title>Formulario de Ingreso | Mazcufit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="home-page">
+<body>
   <header class="site-header">
     <nav class="navbar" aria-label="Navegación principal">
       <a class="brand" href="index.html" aria-label="Ir a la página inicial de Mazcufit">
@@ -45,47 +45,42 @@
   </header>
 
   <main>
-    <section class="hero page-section" aria-labelledby="home-title">
-      <div class="hero__content">
-        <p class="eyebrow" data-i18n="heroEyebrow">Fitness premium · nutrición · rendimiento</p>
-        <div class="hero__logo" aria-label="Logotipo grande de Mazcufit">
-          <span class="hero__logo-mark">MF</span>
-          <span class="hero__logo-text" data-i18n="brandName">Mazcufit</span>
-        </div>
-        <h1 id="home-title" data-i18n="heroTitle">Entrena fuerte. Come inteligente. Vive Mazcufit.</h1>
-        <p class="hero__lead" data-i18n="heroLead">Un ecosistema fitness corporativo para mejorar tu energía diaria con entrenamientos, menús equilibrados, instalaciones funcionales y merchandising deportivo.</p>
-        <div class="hero__buttons">
-          <a class="btn btn--accent" href="registro.html" data-i18n="heroPrimary">Entrar en Mazcufit</a>
-          <a class="btn btn--ghost" href="nosotros.html" data-i18n="heroSecondary">Conoce la marca</a>
-        </div>
-      </div>
-      <aside class="hero__card" aria-label="Métrica destacada">
-        <div class="performance-ring"><span>24/7</span></div>
-        <p data-i18n="heroMetric">Mentalidad activa, nutrición real y progreso medible.</p>
-      </aside>
+    <section class="page-section page-hero" aria-labelledby="admission-title">
+      <p class="eyebrow" data-i18n="admissionEyebrow">Formulario de ingreso</p>
+      <h1 id="admission-title" data-i18n="admissionTitle">Da el primer paso hacia tu plan Mazcufit.</h1>
+      <p class="page-hero__lead" data-i18n="admissionIntro">Completa tus datos para recibir información personalizada. Todos los campos son obligatorios.</p>
     </section>
 
-    <section class="page-section compact-section" aria-labelledby="home-services-title">
-      <div class="section__header">
-        <p class="eyebrow" data-i18n="homeServicesEyebrow">Experiencia integral</p>
-        <h2 id="home-services-title" data-i18n="homeServicesTitle">Todo lo que necesitas para activar tu mejor versión</h2>
-      </div>
-      <div class="cards-grid cards-grid--three">
-        <article class="feature-card">
-          <span class="feature-card__icon">🏋️</span>
-          <h3 data-i18n="homeCardTrainingTitle">Entrenamiento funcional</h3>
-          <p data-i18n="homeCardTrainingText">Programas adaptados para fuerza, movilidad, resistencia y hábitos sostenibles.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-card__icon">🥗</span>
-          <h3 data-i18n="homeCardNutritionTitle">Nutrición equilibrada</h3>
-          <p data-i18n="homeCardNutritionText">Menús del día diseñados para rendir sin renunciar al sabor.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-card__icon">⚡</span>
-          <h3 data-i18n="homeCardGearTitle">Equipamiento Mazcufit</h3>
-          <p data-i18n="homeCardGearText">Merchandising premium para entrenar dentro y fuera del gimnasio.</p>
-        </article>
+    <section class="page-section compact-section">
+      <div class="form-layout">
+        <form class="admission-form" id="admissionForm" novalidate>
+          <div class="form-field">
+            <label for="fullName" data-i18n="formName">Nombre y Apellidos</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" required minlength="3" placeholder="María García López" data-i18n-placeholder="formNamePlaceholder">
+            <small class="error-message" data-error-for="fullName"></small>
+          </div>
+          <div class="form-field">
+            <label for="email" data-i18n="formEmail">Correo Electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="correo@empresa.com" data-i18n-placeholder="formEmailPlaceholder">
+            <small class="error-message" data-error-for="email"></small>
+          </div>
+          <div class="form-field">
+            <label for="phone" data-i18n="formPhone">Número de Teléfono</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required pattern="^[0-9+()\s-]{7,20}$" placeholder="+34 600 000 000" data-i18n-placeholder="formPhonePlaceholder">
+            <small class="error-message" data-error-for="phone"></small>
+          </div>
+          <button class="btn btn--accent" type="submit" data-i18n="formSubmit">Enviar solicitud</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="form-aside">
+          <p class="eyebrow" data-i18n="formAsideEyebrow">Plan personalizado</p>
+          <h2 data-i18n="formAsideTitle">Tu progreso empieza aquí</h2>
+          <ul>
+            <li data-i18n="formBenefit1">Diagnóstico inicial sin coste.</li>
+            <li data-i18n="formBenefit2">Asesoría fitness y nutricional adaptada a tu objetivo.</li>
+            <li data-i18n="formBenefit3">Respuesta del equipo en menos de 24 horas laborables.</li>
+          </ul>
+        </aside>
       </div>
     </section>
   </main>

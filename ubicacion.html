@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mazcufit: experiencia fitness premium con entrenamiento, nutrición, tienda e instalaciones.">
-  <title>Mazcufit | Fitness premium y nutrición deportiva</title>
+  <meta name="description" content="Mapa e instalaciones premium de Mazcufit.">
+  <title>Ubicación e Instalaciones | Mazcufit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="home-page">
+<body>
   <header class="site-header">
     <nav class="navbar" aria-label="Navegación principal">
       <a class="brand" href="index.html" aria-label="Ir a la página inicial de Mazcufit">
@@ -45,47 +45,31 @@
   </header>
 
   <main>
-    <section class="hero page-section" aria-labelledby="home-title">
-      <div class="hero__content">
-        <p class="eyebrow" data-i18n="heroEyebrow">Fitness premium · nutrición · rendimiento</p>
-        <div class="hero__logo" aria-label="Logotipo grande de Mazcufit">
-          <span class="hero__logo-mark">MF</span>
-          <span class="hero__logo-text" data-i18n="brandName">Mazcufit</span>
-        </div>
-        <h1 id="home-title" data-i18n="heroTitle">Entrena fuerte. Come inteligente. Vive Mazcufit.</h1>
-        <p class="hero__lead" data-i18n="heroLead">Un ecosistema fitness corporativo para mejorar tu energía diaria con entrenamientos, menús equilibrados, instalaciones funcionales y merchandising deportivo.</p>
-        <div class="hero__buttons">
-          <a class="btn btn--accent" href="registro.html" data-i18n="heroPrimary">Entrar en Mazcufit</a>
-          <a class="btn btn--ghost" href="nosotros.html" data-i18n="heroSecondary">Conoce la marca</a>
-        </div>
-      </div>
-      <aside class="hero__card" aria-label="Métrica destacada">
-        <div class="performance-ring"><span>24/7</span></div>
-        <p data-i18n="heroMetric">Mentalidad activa, nutrición real y progreso medible.</p>
-      </aside>
+    <section class="page-section page-hero" aria-labelledby="location-title">
+      <p class="eyebrow" data-i18n="locationEyebrow">Ubicación e instalaciones</p>
+      <h1 id="location-title" data-i18n="locationTitle">Espacios preparados para entrenar con intensidad.</h1>
+      <p class="page-hero__lead" data-i18n="locationIntro">Visita nuestras instalaciones: zona funcional, estudio de asesoría, área de nutrición y espacios para retos grupales.</p>
     </section>
 
-    <section class="page-section compact-section" aria-labelledby="home-services-title">
-      <div class="section__header">
-        <p class="eyebrow" data-i18n="homeServicesEyebrow">Experiencia integral</p>
-        <h2 id="home-services-title" data-i18n="homeServicesTitle">Todo lo que necesitas para activar tu mejor versión</h2>
-      </div>
-      <div class="cards-grid cards-grid--three">
-        <article class="feature-card">
-          <span class="feature-card__icon">🏋️</span>
-          <h3 data-i18n="homeCardTrainingTitle">Entrenamiento funcional</h3>
-          <p data-i18n="homeCardTrainingText">Programas adaptados para fuerza, movilidad, resistencia y hábitos sostenibles.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-card__icon">🥗</span>
-          <h3 data-i18n="homeCardNutritionTitle">Nutrición equilibrada</h3>
-          <p data-i18n="homeCardNutritionText">Menús del día diseñados para rendir sin renunciar al sabor.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-card__icon">⚡</span>
-          <h3 data-i18n="homeCardGearTitle">Equipamiento Mazcufit</h3>
-          <p data-i18n="homeCardGearText">Merchandising premium para entrenar dentro y fuera del gimnasio.</p>
-        </article>
+    <section class="page-section compact-section">
+      <div class="location-grid">
+        <div class="map-card">
+          <iframe title="Mapa de ubicación de Mazcufit" src="https://www.google.com/maps?q=Madrid%2C%20Spain&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="gallery-grid" aria-label="Galería de instalaciones Mazcufit">
+          <figure class="gallery-item gallery-item--tall">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="Zona de entrenamiento funcional Mazcufit" loading="lazy">
+            <figcaption data-i18n="galleryTraining">Zona funcional</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="Área de pesas premium" loading="lazy">
+            <figcaption data-i18n="galleryWeights">Área de fuerza</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Ingredientes frescos para nutrición deportiva" loading="lazy">
+            <figcaption data-i18n="galleryNutrition">Nutrición deportiva</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
   </main>
